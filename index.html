@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Memory Game</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="game-container d-flex justify-content-center align-items-center">
+        <div class="card game-card shadow-lg p-4">
+            <h1 class="text-center mb-4">Memory Game</h1>
+
+            <div class="progress mb-4">
+                <div id="progress-bar" class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 0%"></div>
+            </div>
+
+            <div id="game-board" class="row g-3"></div>
+        </div>
+    </div>
+
+    <audio id="sound-flip" src="audio/flip.mp3"></audio>
+    <audio id="sound-success" src="audio/good.mp3"></audio>
+    <audio id="sound-fail" src="audio/fail.mp3"></audio>
+    <audio id="sound-bg" src="audio/fulltrack.mp3" autoplay loop></audio>
+    <script type="module" src="modules/main.js"></script>
+
+</body>
+
+</html>
